@@ -1,0 +1,1 @@
+The executable jar file is under "Student Report Card\out\artifacts\Student_Report_Card_jar".

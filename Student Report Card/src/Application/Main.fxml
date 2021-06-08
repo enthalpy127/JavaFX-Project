@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="522.0" prefWidth="703.0">
+         <left>
+            <VBox prefHeight="464.0" prefWidth="168.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="126.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true" scaleX="1.56">
+                     <image>
+                        <Image url="@../report-card.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="26.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#Home" prefHeight="49.0" prefWidth="168.0" text="Home">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="115.0" mnemonicParsing="false" onAction="#Add" prefHeight="49.0" prefWidth="168.0" text="Add">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#Edit" prefHeight="49.0" prefWidth="168.0" text="Edit">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="214.0" mnemonicParsing="false" onAction="#Help" prefHeight="49.0" prefWidth="168.0" text="Help">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="264.0" mnemonicParsing="false" onAction="#About" prefHeight="49.0" prefWidth="168.0" text="About">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="169.0" prefWidth="168.0">
+                     <children>
+                        <ImageView fitHeight="172.0" fitWidth="170.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../reportcard_cartoon.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <AnchorPane prefHeight="522.0" prefWidth="536.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="Main_Heading" layoutX="93.0" layoutY="14.0" prefHeight="46.0" prefWidth="350.0" text="Student Report Card System">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MainLabel1" layoutX="168.0" layoutY="71.0" prefHeight="46.0" prefWidth="200.0" text="Getting Started">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MainLabel2" layoutX="221.0" layoutY="131.0" prefHeight="35.0" prefWidth="94.0" text="Welcome!">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MainLabel3" layoutX="44.0" layoutY="179.0" prefHeight="27.0" prefWidth="459.0" text="Click any of these buttons on the left menu to start using!">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MainLabel4" layoutX="106.0" layoutY="230.0" prefHeight="30.0" prefWidth="189.0" text="To add student infos,">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MainLabel5" layoutX="293.0" layoutY="230.0" prefHeight="30.0" prefWidth="145.0" text="go to Add page">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MainLabel6" layoutX="93.0" layoutY="274.0" prefHeight="30.0" prefWidth="361.0" text="To edit or search or delete student infos,">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MainLabel7" layoutX="201.0" layoutY="304.0" prefHeight="30.0" prefWidth="145.0" text="go to Edit page">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MainLabel8" layoutX="66.0" layoutY="343.0" prefHeight="30.0" prefWidth="244.0" text="To sell all the student infos,">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MainLabel9" layoutX="310.0" layoutY="343.0" prefHeight="30.0" prefWidth="159.0" text="go to Help page">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MainLabel10" layoutX="216.0" layoutY="457.0" prefHeight="18.0" prefWidth="104.0" text="Developed by">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MainLabel11" layoutX="174.0" layoutY="483.0" prefHeight="27.0" prefWidth="187.0" text="Phone Myat Pyae Sone">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="122.0" fitWidth="126.0" layoutX="376.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../A_plus_cartoon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="129.0" fitWidth="126.0" layoutX="43.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../F_cartoon.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

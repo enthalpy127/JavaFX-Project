@@ -1,0 +1,1 @@
+java --module-path "D:\Student Report Card\javafx-sdk-16\lib" --add-modules javafx.controls,javafx.fxml -jar "Student Report Card.jar"

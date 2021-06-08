@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="522.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Edit">
+   <children>
+      <Label fx:id="Edit_Heading" layoutX="141.0" layoutY="14.0" text="Edit Student Reports">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="73.0" text="No">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EditNo" layoutX="47.0" layoutY="75.0" prefHeight="26.0" prefWidth="52.0" />
+      <Button fx:id="SearchNo" contentDisplay="GRAPHIC_ONLY" layoutX="105.0" layoutY="75.0" mnemonicParsing="false" onAction="#SearchNo" prefHeight="26.0" prefWidth="7.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../search_logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="232.0" layoutY="73.0" text="Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EditName" layoutX="294.0" layoutY="75.0" prefHeight="26.0" prefWidth="183.0" />
+      <Button fx:id="SearchName" contentDisplay="GRAPHIC_ONLY" layoutX="486.0" layoutY="75.0" mnemonicParsing="false" onAction="#SearchName" prefHeight="26.0" prefWidth="7.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../search_logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <VBox fx:id="FirstColumn" layoutX="28.0" layoutY="134.0" prefHeight="310.0" prefWidth="118.0">
+         <children>
+            <Label fx:id="SubjectLabel" alignment="CENTER" prefHeight="18.0" prefWidth="118.0" text="Subject">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Pane prefHeight="14.0" prefWidth="118.0" />
+            <Label fx:id="MyanmarEditLabel" alignment="CENTER" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #ff0b0b;" text="Myanmar" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.7" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="EnglishEditLabel" alignment="CENTER" layoutX="10.0" layoutY="37.0" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #0dcdff;" text="English" textFill="#ff00d9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.7" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="MathEditLabel" alignment="CENTER" layoutX="10.0" layoutY="72.0" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #e0ff0d;" text="Mathematics" textFill="#1c00ff">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.7" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="PhysicsEditLabel" alignment="CENTER" layoutX="10.0" layoutY="106.0" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #ff00dd;" text="Physics" textFill="#00ff1d">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.7" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="ChemEditLabel" alignment="CENTER" layoutX="10.0" layoutY="140.0" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #36ff61;" text="Chemistry" textFill="#ff00f3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.7" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="BioEditLabel" alignment="CENTER" layoutX="16.0" layoutY="240.0" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #2000ff;" text="Biology" textFill="#fff300">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.7" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="TotalEditLabel" alignment="CENTER" layoutX="10.0" layoutY="175.0" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: black;" text="Total" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.7" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="SecondColumn" layoutX="167.0" layoutY="134.0" prefHeight="310.0" prefWidth="118.0">
+         <children>
+            <Label fx:id="MarkLabel" alignment="CENTER" prefHeight="18.0" prefWidth="118.0" text="Marks">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Pane prefHeight="14.0" prefWidth="118.0" />
+            <TextField fx:id="EditMyanmar" prefHeight="34.0" prefWidth="118.0" />
+            <TextField fx:id="EditEnglish" layoutX="10.0" layoutY="37.0" prefHeight="34.0" prefWidth="118.0" />
+            <TextField fx:id="EditMath" layoutX="10.0" layoutY="72.0" prefHeight="34.0" prefWidth="118.0" />
+            <TextField fx:id="EditPhy" layoutX="10.0" layoutY="106.0" prefHeight="34.0" prefWidth="118.0" />
+            <TextField fx:id="EditChem" layoutX="10.0" layoutY="140.0" prefHeight="34.0" prefWidth="118.0" />
+            <TextField fx:id="EditBio" layoutX="10.0" layoutY="175.0" prefHeight="34.0" prefWidth="118.0" />
+            <TextField fx:id="EditTotal" layoutX="10.0" layoutY="240.0" prefHeight="34.0" prefWidth="118.0" />
+         </children>
+      </VBox>
+      <VBox fx:id="ThirdColumn" layoutX="28.0" layoutY="441.0" prefHeight="48.0" prefWidth="118.0">
+         <children>
+            <Label fx:id="RollNoEditLabel" alignment="CENTER" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: rgb(38, 255, 0);" text="Roll No" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.7" top="6.5" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="FourthColumn" layoutX="167.0" layoutY="441.0" prefHeight="48.0" prefWidth="118.0">
+         <children>
+            <TextField fx:id="EditRollNo" prefHeight="34.0" prefWidth="92.0">
+               <VBox.margin>
+                  <Insets top="6.5" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <ImageView fitHeight="241.0" fitWidth="183.0" layoutX="402.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../cartoon_report_card.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="UpdateButtonEditPage" layoutX="369.0" layoutY="389.0" mnemonicParsing="false" onAction="#Update" prefHeight="34.0" prefWidth="106.0" text="Update" />
+      <Button fx:id="CancelButtonEditPage" layoutX="369.0" layoutY="431.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="34.0" prefWidth="106.0" text="Cancel" />
+      <Button fx:id="DeleteButtonEditPage" layoutX="369.0" layoutY="471.0" mnemonicParsing="false" onAction="#Delete" prefHeight="34.0" prefWidth="106.0" text="Delete" />
+      <Label layoutX="334.0" layoutY="141.0" text="ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EditID" layoutX="317.0" layoutY="171.0" prefHeight="26.0" prefWidth="54.0" />
+   </children>
+</AnchorPane>
